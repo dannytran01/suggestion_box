@@ -1,0 +1,11 @@
+<form>
+    <h2>{{suggstion.title}}</h2>
+    <p>Votes: {{suggestion.upvotes}}</p>
+    <div class="row" ng-repeat="comment in suggestion.comments">
+        <p>{{comment}}</p>
+    </div>
+    <div>
+        <input type="text" name="comment-text"/>
+        <input type="submit" value="Add Comment"/>
+    </div>
+</form>
