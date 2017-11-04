@@ -6,7 +6,13 @@
         <h2>{{suggestion.title}}</h2>
         <p>
             <span>Votes: {{suggestion.upvotes}}</span>
-            <a class="btn btn-primary btn-large" href="#">Comments</a>
+            <button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-thumbs-up"></span> Like
+            </button>
+            <button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-thumbs-down"></span> Dislike
+            </button>
         </p>
+        <a class="btn btn-primary btn-large" href="#">Comments</a>
     </div>
 </div>
