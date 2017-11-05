@@ -1,14 +1,14 @@
 <div>
     <h3><a href="#!add_suggestion">Add a Suggestion</a></h3>
-    <div class="row" ng-repeat="suggestion in suggestions">
+    <div class="row" ng-repeat="suggestion in suggestions | orderBy: '-upvotes'">
         <div class="jumbotron">
             <h2>{{suggestion.title}}</h2>
             <p>
                 <span>Votes: {{suggestion.upvotes}}</span>
-                <button type="button" class="btn btn-default btn-sm" ng-click="upVote($index)">
+                <button type="button" class="btn btn-default btn-sm" ng-click="upVote(suggestion)">
                     <span class="glyphicon glyphicon-thumbs-up"></span> Like
                 </button>
-                <button type="button" class="btn btn-default btn-sm" ng-click="downVote($index)">
+                <button type="button" class="btn btn-default btn-sm" ng-click="downVote(suggestion)">
                     <span class="glyphicon glyphicon-thumbs-down"></span> Dislike
                 </button>
             </p>

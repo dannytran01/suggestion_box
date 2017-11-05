@@ -3,7 +3,7 @@ app.factory('demoSuggestions', function() {
         posts: [
             {
                 title: 'Free pizza at club meetings',
-                upvotes: 15,
+                upvotes: 5,
                 comments: ["That's tight! I agree", "I'm hungry already"],
             },
             {

@@ -2,11 +2,15 @@ app.controller('HomeController', ['$scope', 'demoSuggestions', function($scope, 
 
 	$scope.suggestions = demoSuggestions.posts;
 
-	$scope.upVote = function ($index) {
-		$scope.suggestions[$index].upvotes += 1;
+	$scope.upVote = function (item) {
+		var i = demoSuggestions.posts.indexOf(item);
+        demoSuggestions.posts[i].upvotes += 1;
+        $scope.suggestions = demoSuggestions.posts;
     };
 
-	$scope.downVote = function ($index) {
-		$scope.suggestions[$index].upvotes -= 1;
+	$scope.downVote = function (item) {
+        var i = demoSuggestions.posts.indexOf(item);
+        demoSuggestions.posts[i].upvotes -= 1;
+        $scope.suggestions = demoSuggestions.posts;
 	};
 }]);
