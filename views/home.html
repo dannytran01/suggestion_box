@@ -7,10 +7,10 @@
         <h2>{{suggestion.title}}</h2>
         <p>
             <span>Votes: {{suggestion.upvotes}}</span>
-            <button type="button" class="btn btn-default btn-sm">
+            <button type="button" class="btn btn-default btn-sm" ng-click="upVote($index)">
                 <span class="glyphicon glyphicon-thumbs-up"></span> Like
             </button>
-            <button type="button" class="btn btn-default btn-sm">
+            <button type="button" class="btn btn-default btn-sm" ng-click="downVote($index)">
                 <span class="glyphicon glyphicon-thumbs-down"></span> Dislike
             </button>
         </p>
