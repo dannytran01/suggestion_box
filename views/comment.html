@@ -1,13 +1,13 @@
 <form ng-submit="addComment()">
     <h2>{{suggestion.title}}</h2>
     <p>Votes: {{suggestion.upvotes}}</p>
-    <div class="row" ng-repeat="comment in suggestion.comments">
+    <div class="row" ng-repeat="comment in suggestion.comments track by $index">
         <div class="container">
             <p>{{comment}}</p>
         </div>
     </div>
     <div>
-        <input type="text" ng-model="commentText"/>
+        <input type="text" ng-model="commentText" name="addCommentForm"/>
         <input type="submit" value="Add Comment"/>
     </div>
 </form>
