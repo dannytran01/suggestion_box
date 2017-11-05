@@ -1,19 +1,19 @@
 <div>
-    <h3>Add a Suggestion</h3>
-</div>
-
-<div class="row" ng-repeat="suggestion in suggestions">
-    <div class="jumbotron">
-        <h2>{{suggestion.title}}</h2>
-        <p>
-            <span>Votes: {{suggestion.upvotes}}</span>
-            <button type="button" class="btn btn-default btn-sm" ng-click="upVote($index)">
-                <span class="glyphicon glyphicon-thumbs-up"></span> Like
-            </button>
-            <button type="button" class="btn btn-default btn-sm" ng-click="downVote($index)">
-                <span class="glyphicon glyphicon-thumbs-down"></span> Dislike
-            </button>
-        </p>
-        <a class="btn btn-primary btn-large" href="#">Comments</a>
+    <h3><a href="#!add_suggestion">Add a Suggestion</a></h3>
+    <div class="row" ng-repeat="suggestion in suggestions">
+        <div class="jumbotron">
+            <h2>{{suggestion.title}}</h2>
+            <p>
+                <span>Votes: {{suggestion.upvotes}}</span>
+                <button type="button" class="btn btn-default btn-sm" ng-click="upVote($index)">
+                    <span class="glyphicon glyphicon-thumbs-up"></span> Like
+                </button>
+                <button type="button" class="btn btn-default btn-sm" ng-click="downVote($index)">
+                    <span class="glyphicon glyphicon-thumbs-down"></span> Dislike
+                </button>
+            </p>
+            <a class="btn btn-primary btn-large" href="#!/suggestions/{{$index}}/comment">Comments</a>
+        </div>
     </div>
 </div>
+
