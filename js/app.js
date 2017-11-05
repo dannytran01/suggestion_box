@@ -6,11 +6,11 @@ app.config(function($routeProvider){
             controller: 'HomeController',
             templateUrl: 'views/home.html'
         })
-        .when('/add-suggestion', {
+        .when('/add_suggestion', {
             controller: 'SuggestionController',
             templateUrl: 'views/add_suggestion.html'
         })
-        .when('/suggestion/:suggestion-id/comment', {
+        .when('/suggestions/:suggestion-id/comment', {
             controller: 'CommentController',
             templateUrl: 'views/comment.html'
         })
