@@ -1,5 +1,5 @@
-app.factory('demoSuggestions', [function() {
-    var demoSuggestions = {
+app.factory('demoSuggestions', function() {
+    return {
         posts: [
             {
                 title: 'Free pizza at club meetings',
@@ -23,5 +23,4 @@ app.factory('demoSuggestions', [function() {
             }
         ]
     };
-    return demoSuggestions;
-}]);
+});

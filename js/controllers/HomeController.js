@@ -1,4 +1,5 @@
-app.controller('HomeController', ['$scope', function($scope){
-	$scope.helloWorld = "Hello World!";
+app.controller('HomeController', ['$scope', 'demoSuggestions', function($scope, demoSuggestions){
+
+	$scope.suggestions = demoSuggestions.posts;
 
 }]);

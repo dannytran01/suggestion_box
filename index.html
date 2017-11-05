@@ -4,9 +4,15 @@
 		<title>Suggestion Box</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<script type="text/javascript" src="js/vendor/angular.min.js"></script>
+		<script type="text/javascript" src="js/vendor/angular-route.min.js"></script>
 	</head>
 
-	<body ng-app="SuggestionBox" ng-controller="HomeController">
+	<body ng-app="SuggestionBox">
+		<div class="header">
+			<div class="container">
+				<h1>Suggestion Box</h1>
+			</div>
+		</div>
 
 		<div class="main">
 			<div class="container">
@@ -16,13 +22,13 @@
 
 		<!--modules-->
 		<script type="text/javascript" src="js/app.js"></script>
-
 		<!--directives-->
-
 		<!--services-->
-
+		<script type="text/javascript" src="js/services/demoSuggestion.js"></script>
 		<!--controllers-->
 		<script type="text/javascript" src="js/controllers/HomeController.js"></script>
+		<script type="text/javascript" src="js/controllers/SuggestionController.js"></script>
+		<script type="text/javascript" src="js/controllers/CommentController.js"></script>
 
 	</body>
 </html>
