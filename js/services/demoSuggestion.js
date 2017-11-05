@@ -4,7 +4,7 @@ app.factory('demoSuggestions', function() {
             {
                 title: 'Free pizza at club meetings',
                 upvotes: 15,
-                comments: [],
+                comments: ["That's tight! I agree", "I'm hungry already"],
             },
             {
                 title: 'End all club emails with Laffy Taffy jokes',
