@@ -3,7 +3,7 @@ app.controller('CommentController', ['$scope', 'demoSuggestions', '$routeParams'
         $scope.suggestion = demoSuggestions.posts[$routeParams.id];
 
         $scope.addComment = function(){
-            console.log("Attempting to get: " + $scope.commentText);
-            $scope.suggestion.comments.push($scope.commentText);
+            demoSuggestions.posts[$routeParams.id].comments.push($scope.commentText);
+            $scope.suggestion = demoSuggestions.posts[$routeParams.id];
         };
 }]);
