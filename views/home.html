@@ -12,7 +12,9 @@
                     <span class="glyphicon glyphicon-thumbs-down"></span> Dislike
                 </button>
             </p>
-            <a class="btn btn-primary btn-large" href="#!suggestions/{{suggestions.indexOf(suggestion)}}/comments">Comments</a>
+            <a class="btn btn-primary btn-large" href="#!suggestions/{{suggestions.indexOf(suggestion)}}/comments">
+                {{suggestion.comments.length > 0? suggestion.comments.length: ''}} Comments
+            </a>
         </div>
     </div>
 </div>
