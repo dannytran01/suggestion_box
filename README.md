@@ -2,8 +2,8 @@
 Learning Front End via AngularJS 1.6
 
 - Phase 1: Building the single page application
-- Phase 2: Beautify the web page with CSS
-- Phase n: Deploy
+- Phase 2: Beautify the web page and enhance user experience
+- Phase 3: Adding features 1.0
 
 Phase 1: User Stories
 -
@@ -34,8 +34,9 @@ Phase 1: Strategy
     + Add a suggestion to the list
     + Trigger text box for comment input
     + Add comment to a given suggestion
-
-
-Phase n: Deploy
--  
-Deploy to GitHub as a static page
+    
+Phase 2: Beautify the web page
+-
++ Develop a theme using SASS
++ Incorporate an image of a suggestion box
++ Increase web application responsiveness
