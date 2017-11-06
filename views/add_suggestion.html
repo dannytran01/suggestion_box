@@ -1,5 +1,5 @@
-<form>
+<form ng-submit="addNewSuggestion()">
     <h2>What is your Suggestion?</h2>
-    <input type="text" name="suggestion-input"/>
+    <input type="text" ng-model="newSuggestion" name="suggestion-input"/>
     <input type="submit" value="Submit Suggestion"/>
 </form>
