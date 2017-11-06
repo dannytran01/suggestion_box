@@ -2,8 +2,9 @@ app.controller('SuggestionController', ['$scope', 'demoSuggestions', '$location'
 
     $scope.addNewSuggestion = function(){
         var newSuggestion = {title:$scope.newSuggestion, upvotes:0, comments:[]};
-        demoSuggestions.posts.push(newSuggestion);
-        $location.path('/suggestions');
+        var pos = demoSuggestions.posts.push(newSuggestion);
+        $location.hash(pos - 1);
+        $location.path('/suggestions' + pos);
     };
 
 }]);

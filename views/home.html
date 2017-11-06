@@ -1,7 +1,7 @@
 <div>
     <h3><a href="#!add_suggestion">Add a Suggestion</a></h3>
     <div class="row" ng-repeat="suggestion in suggestions | orderBy: '-upvotes'">
-        <div class="jumbotron">
+        <div class="jumbotron" id="{{suggestions.indexOf(suggestion)}}">
             <h2>{{suggestion.title}}</h2>
             <p>
                 <span>Votes: {{suggestion.upvotes}}</span>
